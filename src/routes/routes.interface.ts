@@ -1,4 +1,3 @@
-import { type } from 'os'
 import { LazyExoticComponent } from 'react'
 
 interface OptionalProps {

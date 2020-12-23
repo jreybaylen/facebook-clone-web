@@ -1,6 +1,6 @@
 function LogIn () {
     const logInElement = (
-        <div>Hello World!</div>
+        <div>Hello LogIn!</div>
     )
 
     return logInElement

@@ -15,10 +15,10 @@ function FacebookCloneApp () {
                             const isExactRoutePath = exact || false
 
                             return (
-                                <Route
-                                    key={ name }
-                                    path={ rest.path }
-                                    exact={ isExactRoutePath }
+                                <Route 
+                                    key={ name } 
+                                    path={ rest.path } 
+                                    exact={ isExactRoutePath } 
                                     component={ rest.component }
                                 />
                             )

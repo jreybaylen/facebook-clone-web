@@ -1,6 +1,6 @@
 function Home () {
     const homeElement = (
-        <div>Hello World!</div>
+        <div>Hello Home!</div>
     )
 
     return homeElement

@@ -9,7 +9,7 @@ render(
 	<StrictMode>
 		<FacebookCloneApp />
 	</StrictMode>,
-	document.getElementById('root')
+	document.getElementById('facebook-clone-root')
 )
 
 reportWebVitals()

@@ -7,7 +7,7 @@ interface CommonProps {
     children: string | JSX.Element | Array<JSX.Element>
 }
 
-function HTML <T>(props: T & CommonProps) {
+function HTML <T>(props: T & CommonProps): JSX.Element {
     const { children, tag, ...rest } = props
 
     return createElement(tag, rest, children)

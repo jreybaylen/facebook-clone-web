@@ -1,20 +1,15 @@
-import { lazy, CSSProperties } from 'react'
+import { lazy } from 'react'
 
-const Div = lazy(() => import('@modules/components/html/Div'))
+import { styles } from './index.styles'
+
+const HTML = lazy(() => import('@modules/components/html/Common'))
 const FacebookIcon = lazy(() => import('@modules/components/icons/Facebook'))
-const styles: CSSProperties = {
-    inset: 0,
-    display: 'flex',
-    position: 'fixed',
-    alignItems: 'center',
-    justifyContent: 'center'
-}
 
 function PageLoader () {
     const pageLoaderElement = (
-        <Div style={ styles }>
-            <FacebookIcon width={ 100 } height={ 100 } />
-        </Div>
+        <HTML tag="div" style={ styles }>
+            <FacebookIcon animation width={ 100 } height={ 100 } />
+        </HTML>
     )
 
     return pageLoaderElement

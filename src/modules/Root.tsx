@@ -1,8 +1,8 @@
 import { Suspense } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import { appRoutes } from '../routes'
-import { RoutesProps } from '../routes/routes.interface'
+import { appRoutes } from '@routes/index'
+import { RoutesProps } from '@routes/index.interface'
 
 function FacebookCloneApp () {
     const facebookCloneAppElement = (
@@ -15,8 +15,8 @@ function FacebookCloneApp () {
                             const isExactRoutePath = exact || false
 
                             return (
-                                <Route 
-                                    key={ name } 
+                                <Route
+                                    key={ name }
                                     path={ rest.path } 
                                     exact={ isExactRoutePath } 
                                     component={ rest.component }

@@ -1,8 +1,8 @@
 import { lazy } from 'react'
 
-import { RoutesProps } from './routes.interface'
+import { RoutesProps } from './index.interface'
 
-const HomePage = lazy(() => import('../modules/normal-components/Home'))
+const HomePage = lazy(() => import('@modules/normal-components/Home'))
 
 const normalRoutes: Array<RoutesProps> = [
     {

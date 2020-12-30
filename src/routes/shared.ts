@@ -1,8 +1,8 @@
 import { lazy } from 'react'
 
-import { RoutesProps } from './routes.interface'
+import { RoutesProps } from './index.interface'
 
-const LogInPage = lazy(() => import('../modules/shared-components/LogIn'))
+const LogInPage = lazy(() => import('@modules/shared-components/LogIn'))
 
 const sharedRoutes: Array<RoutesProps> = [
     {

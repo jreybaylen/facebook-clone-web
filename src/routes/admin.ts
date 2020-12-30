@@ -1,4 +1,4 @@
-import { RoutesProps } from './routes.interface'
+import { RoutesProps } from './index.interface'
 
 const adminRoutes: Array<RoutesProps> = [
 ]

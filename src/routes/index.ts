@@ -1,4 +1,4 @@
-import { RoutesProps } from './routes.interface'
+import { RoutesProps } from './index.interface'
 
 import { adminRoutes } from './admin'
 import { normalRoutes } from './normal'

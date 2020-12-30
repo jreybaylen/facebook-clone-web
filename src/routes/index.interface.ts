@@ -11,12 +11,13 @@ interface BasicRoutesProps {
 }
 
 interface ConfigProps {
-    authenticate: boolean
-    redirectToIfNotAuth: string
+    config: {
+        authenticate: boolean
+        redirectToIfNotAuth: string
+    }
 }
 
-interface RoutesProps extends BasicRoutesProps, Partial<OptionalProps> {
-    config?: ConfigProps
-}
+interface RoutesProps
+    extends BasicRoutesProps, Partial<OptionalProps>, Partial<ConfigProps> { }
 
-export type { RoutesProps }
+export type { RoutesProps, ConfigProps }

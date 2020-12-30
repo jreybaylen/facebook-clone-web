@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { render } from 'react-dom'
 
-import { FacebookCloneApp } from './modules/Root'
+import { FacebookCloneApp } from '@modules/Root'
 
 import reportWebVitals from './reportWebVitals'
 

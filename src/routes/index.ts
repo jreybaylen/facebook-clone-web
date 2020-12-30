@@ -1,13 +1,23 @@
+import { lazy } from 'react'
+
 import { RoutesProps } from './index.interface'
 
-import { adminRoutes } from './admin'
-import { normalRoutes } from './normal'
-import { sharedRoutes } from './shared'
-
 const appRoutes: Array<RoutesProps> = [
-    ...adminRoutes,
-    ...normalRoutes,
-    ...sharedRoutes
+    {
+        path: '/',
+        exact: true,
+        name: 'home',
+        config: {
+            authenticate: true,
+            redirectToIfNotAuth: '/sign-in'
+        },
+        component: lazy(() => import('@modules/pages/Home'))
+    },
+    {
+        name: 'login',
+        path: '/sign-in',
+        component: lazy(() => import('@modules/pages/LogIn'))
+    }
 ]
 
 export { appRoutes }

@@ -1,6 +1,10 @@
+import { lazy } from 'react'
+
+const Header = lazy(() => import('@modules/containers/Header'))
+
 function Home () {
     const homeElement = (
-        <div>Hello Home!</div>
+        <Header />
     )
 
     return homeElement

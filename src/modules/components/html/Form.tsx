@@ -6,14 +6,14 @@ interface FormProps {
 }
 
 function Form (props: FormProps & FormHTMLAttributes<HTMLFormElement>): JSX.Element {
-    const { children, onSubmit } = props
+    const { children, onSubmit, ...rest } = props
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         
         onSubmit(event)
     }
     const formElement = (
-        <form onSubmit={ handleSubmit }>
+        <form onSubmit={ handleSubmit } { ...rest }>
             { children }
         </form>
     )

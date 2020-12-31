@@ -9,8 +9,9 @@ interface CommonProps {
 
 function HTML <T>(props: T & CommonProps): JSX.Element {
     const { children, tag, ...rest } = props
+    const htmlElement = createElement(tag, rest, children)
 
-    return createElement(tag, rest, children)
+    return htmlElement
 }
 
 export default HTML

@@ -20,7 +20,7 @@ const styles: StylesProps = {
         borderRadius: '30px',
         boxSizing: 'border-box',
         backgroundColor: '#f0f2f5',
-        padding: '10px 15px 10px 35px'
+        padding: '11px 15px 10px 35px'
     }
 }
 

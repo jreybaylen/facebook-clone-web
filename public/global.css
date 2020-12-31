@@ -1,0 +1,17 @@
+* { 
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-center-nav ul li:hover a:not(.active) {
+    border-radius: 10px;
+    background-color: #f0f2f5;
+}
+
+.header-nav-indicator {
+    left: 0;
+    right: 0;
+    height: 3px;
+    bottom: -4px;
+    position: absolute;
+    background-color: #1877f2;
+}

@@ -4,6 +4,7 @@ import { styles } from './index.styles'
 
 const Form = lazy(() => import('@modules/components/html/Form'))
 const Input = lazy(() => import('@modules/components/html/Input'))
+const SearchIcon = lazy(() => import('@modules/components/icons/Search'))
 
 function Search (): JSX.Element {
     const [ search, setSearch ] = useState<string>('')
@@ -14,11 +15,13 @@ function Search (): JSX.Element {
         setSearch(event.target.value as string)
     }
     const searchElement = (
-        <Form onSubmit={ handleSubmit }>
+        <Form onSubmit={ handleSubmit } style={ styles.form }>
+            <SearchIcon style={ styles.icon } width={ 20 } height={ 20 } />
             <Input
                 type="text" 
                 value={ search } 
-                style={ styles }
+                autoComplete="off"
+                style={ styles.input }
                 onChange={ handleChange }
                 placeholder="Search Facebook"
             />

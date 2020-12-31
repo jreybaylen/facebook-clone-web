@@ -1,16 +1,16 @@
 import { Fragment } from 'react'
 
 import { styles } from './index.styles'
+import { IconProps } from './index.interfaces'
 
-interface FacebookProps {
-    width: number
-    height: number
+interface FacebookProps extends IconProps {
     animation?: boolean
 }
 
 function Facebook (props: FacebookProps) {
+    const { style, ...rest } = props
     const facebookElement = (
-        <svg style={ styles } viewBox="0 0 36 36" fill="url(#jsc_s_2)" { ...props }>
+        <svg style={{ ...styles, ...style }} viewBox="0 0 36 36" fill="url(#jsc_s_2)" { ...rest }>
             <defs>
                 <linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_s_2">
                     <stop offset="0%" stopColor="#0062E0" />

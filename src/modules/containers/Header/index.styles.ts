@@ -55,6 +55,15 @@ const styles: StylesProps = {
     },
     iconActive: {
         fill: '#1877f2'
+    },
+    indicator: {
+        left: 0,
+        right: 0,
+        height: 3,
+        bottom: -4,
+        borderRadius: 5,
+        position: 'absolute',
+        backgroundColor: '#1877f2'
     }
 }
 

@@ -41,8 +41,8 @@ function Header () {
                             <HTML tag="li" key={ path } style={ styles.centerNavUlLi }>
                                 <NavLink to={ path } style={ styles.centerNavUlLiLink }>
                                     <Icon style={ getLinkStyle(path) } width={ 28 } height={ 28 } />
-                                    { pathname === path && (
-                                        <HTML tag="div" className="header-nav-indicator" children="" />
+                                    { (pathname === path) && (
+                                        <HTML tag="div" style={ styles.indicator } children="" />
                                     ) }
                                 </NavLink>
                             </HTML>

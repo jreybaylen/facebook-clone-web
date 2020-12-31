@@ -8,6 +8,7 @@ interface StylesProps {
     leftNav: CSSProperties
     rightNav: CSSProperties
     centerNav: CSSProperties
+    indicator: CSSProperties
     iconActive: CSSProperties
     centerNavUl: CSSProperties
     centerNavUlLi: CSSProperties

@@ -14,6 +14,43 @@ const appRoutes: Array<RoutesProps> = [
         component: lazy(() => import('@modules/pages/Home'))
     },
     {
+        path: '/pages',
+        name: 'pages',
+        config: {
+            authenticate: true,
+            redirectToIfNotAuth: '/sign-in'
+        },
+        component: lazy(() => import('@modules/pages/AccountPage'))
+    },
+    {
+        path: '/watch',
+        name: 'watch',
+        config: {
+            authenticate: true,
+            redirectToIfNotAuth: '/sign-in'
+        },
+        component: lazy(() => import('@modules/pages/Watch'))
+    },
+    {
+        path: '/market-place',
+        name: 'market-place',
+        config: {
+            authenticate: true,
+            redirectToIfNotAuth: '/sign-in'
+        },
+        component: lazy(() => import('@modules/pages/MartketPlace'))
+    },
+    {
+        path: '/groups',
+        exact: true,
+        name: 'groups',
+        config: {
+            authenticate: true,
+            redirectToIfNotAuth: '/sign-in'
+        },
+        component: lazy(() => import('@modules/pages/Groups'))
+    },
+    {
         name: 'login',
         path: '/sign-in',
         component: lazy(() => import('@modules/pages/LogIn'))

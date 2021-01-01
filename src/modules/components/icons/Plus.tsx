@@ -1,9 +1,9 @@
 import { styles } from './index.styles'
 import { IconProps } from './index.interfaces'
 
-function Search (props: IconProps) {
+function Plus (props: IconProps) {
     const { style, ...rest } = props
-    const searchElement = (
+    const plusElement = (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -11,17 +11,17 @@ function Search (props: IconProps) {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            className="feather feather-search"
+            className="feather feather-plus"
             viewBox="0 0 28 28"
             style={{ ...styles, ...style }}
             { ...rest }
         >
-            <circle color="#797e80" cx="11" cy="11" r="8" />
-            <path color="#797e80" d="M21 21L16.65 16.65" />
+            <path d="M12 5L12 19" />
+            <path d="M5 12L19 12" />
         </svg>
     )
 
-    return searchElement
+    return plusElement
 }
 
-export default Search
+export default Plus

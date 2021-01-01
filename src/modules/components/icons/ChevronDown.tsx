@@ -1,9 +1,9 @@
 import { styles } from './index.styles'
 import { IconProps } from './index.interfaces'
 
-function Search (props: IconProps) {
+function ChevronDown (props: IconProps) {
     const { style, ...rest } = props
-    const searchElement = (
+    const chevronDownElement = (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -11,17 +11,16 @@ function Search (props: IconProps) {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            className="feather feather-search"
+            className="feather feather-chevron-down"
             viewBox="0 0 28 28"
             style={{ ...styles, ...style }}
             { ...rest }
         >
-            <circle color="#797e80" cx="11" cy="11" r="8" />
-            <path color="#797e80" d="M21 21L16.65 16.65" />
+            <path d="M6 9L12 15 18 9"></path>
         </svg>
     )
 
-    return searchElement
+    return chevronDownElement
 }
 
-export default Search
+export default ChevronDown

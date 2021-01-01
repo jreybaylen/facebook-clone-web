@@ -1,4 +1,4 @@
-import { StylesProps } from './index.interface'
+import { StylesProps } from './index.interfaces'
 
 const styles: StylesProps = {
     form: {
@@ -20,7 +20,22 @@ const styles: StylesProps = {
         borderRadius: '30px',
         boxSizing: 'border-box',
         backgroundColor: '#f0f2f5',
-        padding: '11px 15px 10px 35px'
+        padding: '12px 15px 12px 35px'
+    },
+    nav: {
+        margin: 0,
+        maxWidth: 285,
+        width: '100%',
+        paddingLeft: 0,
+        display: 'flex',
+        listStyle: 'none'
+    },
+    searchIcon: {
+        marginRight: 10
+    },
+    searchInput: {
+        width: '100%',
+        boxSizing: 'border-box'
     }
 }
 

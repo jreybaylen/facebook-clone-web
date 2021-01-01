@@ -1,9 +1,7 @@
 import { CSSProperties } from 'react'
 
 interface StylesProps {
-    form: CSSProperties
-    icon: CSSProperties
-    input: CSSProperties
+    nav: CSSProperties
 }
 
 export type { StylesProps }

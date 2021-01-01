@@ -12,7 +12,7 @@ function ChevronDown (props: IconProps) {
             strokeLinejoin="round"
             strokeWidth="2"
             className="feather feather-chevron-down"
-            viewBox="0 0 28 28"
+            viewBox="0 0 24 24"
             style={{ ...styles, ...style }}
             { ...rest }
         >

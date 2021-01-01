@@ -23,16 +23,16 @@ function Search (): JSX.Element {
             </HTML>
             <HTML tag="li" style={ styles.searchInput }>
                 <Form onSubmit={ handleSubmit } style={ styles.form }>
-                <SearchIcon style={ styles.icon } width={ 20 } height={ 20 } />
-                <Input
-                    type="text" 
-                    value={ search } 
-                    autoComplete="off"
-                    style={ styles.input }
-                    onChange={ handleChange }
-                    placeholder="Search Facebook"
-                />
-            </Form>
+                    <SearchIcon style={ styles.icon } width={ 20 } height={ 20 } />
+                    <Input
+                        type="text" 
+                        value={ search } 
+                        autoComplete="off"
+                        style={ styles.input }
+                        onChange={ handleChange }
+                        placeholder="Search Facebook"
+                    />
+                </Form>
             </HTML>
         </HTML>
     )

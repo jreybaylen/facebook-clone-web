@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ChangeEvent, lazy, useState } from 'react'
 
 import { styles } from './index.styles'
@@ -19,7 +20,9 @@ function Search (): JSX.Element {
     const searchElement = (
         <HTML tag="ul" style={ styles.nav }>
             <HTML tag="li" style={ styles.searchIcon }>
-                <FacebookIcon width={ 40 } height={ 40 } />
+                <Link to="/">
+                    <FacebookIcon width={ 40 } height={ 40 } />
+                </Link>
             </HTML>
             <HTML tag="li" style={ styles.searchInput }>
                 <Form onSubmit={ handleSubmit } style={ styles.form }>

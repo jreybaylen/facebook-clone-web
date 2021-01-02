@@ -7,7 +7,7 @@ import { RoutesProps } from '@routes/index.interface'
 function FacebookCloneApp () {
     const facebookCloneAppElement = (
         <BrowserRouter>
-            <Suspense fallback="Facebook Clone Loading...">
+            <Suspense fallback="">
                 <Switch>
                     { appRoutes.map(
                         (route: RoutesProps) => {

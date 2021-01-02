@@ -13,7 +13,7 @@ const navigations: Array<NavigationProps> = [
 ]
 
 function Controls () {
-    const [ profileSrc, setProfileSrc ] = useState('')
+    const [ profileSrc, setProfileSrc ] = useState<string>('')
     const handleGetProfileSrc = useRef(async () => {
         const profile = await import('@assets/profile.jpg')
 

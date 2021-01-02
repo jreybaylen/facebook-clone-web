@@ -31,3 +31,15 @@ body {
 .controls-profile.profile-options:hover {
     background-color: #00000026;
 }
+
+.story-link .story-hover {
+    display: none;
+}
+
+.story-link:hover .story-hover {
+    display: block;
+}
+
+.story-link:hover img {
+    transform: scale(1.025);
+}

@@ -20,33 +20,35 @@ function FriendStories () {
         ]))
     })
     const friendStoriesElement = (
-        <HTML tag="ul" style={ styles.ul }>
-            { stories.map(({ id, name, images }: StoriesProps, index: number) => {
-                const [ imageToShow ] = images
+        <HTML tag="section" style={ styles.section }>
+            <HTML tag="ul" style={ styles.ul }>
+                { stories.map(({ id, name, images }: StoriesProps, index: number) => {
+                    const [ imageToShow ] = images
 
-                return (
-                    <HTML tag="li" key={ id } style={ styles.li }>
-                        <Link className="story-link" to={ `/stories/${ id }` } style={ styles.story }>
-                            <HTML tag="img" src={ imageToShow } style={ styles.img(index) } />
-                            { !index ? (
-                                <HTML tag="span" style={ styles.createContainer }>
-                                    <HTML tag="span" style={ styles.plusIcon }>
-                                        <PlusIcon width={ 28 } height={ 28 } />
+                    return (
+                        <HTML tag="li" key={ id } style={ styles.li }>
+                            <Link className="story-link" to={ `/stories/${ id }` } style={ styles.story }>
+                                <HTML tag="img" src={ imageToShow } style={ styles.img(index) } />
+                                { !index ? (
+                                    <HTML tag="span" style={ styles.createContainer }>
+                                        <HTML tag="span" style={ styles.plusIcon }>
+                                            <PlusIcon width={ 28 } height={ 28 } />
+                                        </HTML>
+                                        <HTML tag="span" children="Create a Story" style={ styles.create } />
                                     </HTML>
-                                    <HTML tag="span" children="Create a Story" style={ styles.create } />
-                                </HTML>
-                            ) : '' }
-                            { index ? (
-                                <Fragment>
-                                    <HTML tag="span" style={ styles.overlay } />
-                                    <HTML tag="span" children={ name } style={ styles.name } />
-                                </Fragment>
-                            ) : '' }
-                            <HTML tag="span" className="story-hover" style={ styles.storyHover } />
-                        </Link>
-                    </HTML>
-                )
-            }) }
+                                ) : '' }
+                                { index ? (
+                                    <Fragment>
+                                        <HTML tag="span" style={ styles.overlay } />
+                                        <HTML tag="span" children={ name } style={ styles.name } />
+                                    </Fragment>
+                                ) : '' }
+                                <HTML tag="span" className="story-hover" style={ styles.storyHover } />
+                            </Link>
+                        </HTML>
+                    )
+                }) }
+            </HTML>
         </HTML>
     )
 

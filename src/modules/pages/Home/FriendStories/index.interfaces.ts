@@ -12,6 +12,7 @@ interface StyleProps {
     name: CSSProperties
     story: CSSProperties
     create: CSSProperties
+    section: CSSProperties
     overlay: CSSProperties
     plusIcon: CSSProperties
     storyHover: CSSProperties

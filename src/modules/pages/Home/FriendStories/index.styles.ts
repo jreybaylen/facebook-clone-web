@@ -1,15 +1,23 @@
 import { StyleProps } from './index.interfaces'
 
 const styles: StyleProps = {
+    section: {
+        width: '100%',
+        maxWidth: 850
+    },
     ul: {
+        maxWidth: 550,
+        width: '100%',
+        paddingLeft: 0,
         display: 'flex',
+        margin: '0 auto',
         listStyle: 'none'
     },
     li: {
         height: 200,
         maxWidth: 111,
         display: 'flex',
-        marginRight: 10,
+        margin: '0 5px',
         borderRadius: 10,
         overflow: 'hidden',
         boxShadow: '0 1px 2px #00000033'
